@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+    <style>
+      body{
+        padding: 30px;
+        margin: 5px;
+        position: relative;
+        background-color: aqua;
+      }
+      .docorate {
+        padding: 20px;
+        color: green;
+        position: absolute;
+        right: 60%;
+        left: 20%;
+        border-radius: 20%;
+        box-shadow: 60px 46px 250px 69px rgba(225, 50, 50, 0.75);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app" >
+      <div class="decorate">
+        <label for="name"> The names of students </label> <br />
+
+        <input
+          v-model.trim.lazy="names"
+          type="text"
+          placeholder="enter your name"
+        />
+        <br />
+        <br />
+        <p>hello {{show}}, Please enter your comments in the box below.</p>
+
+        <textarea
+          v-model.capture="tarea"
+          placeholder="enter your comments accordingly"
+        >
+        </textarea>
+        <button>submit</button>
+        <template v-if="save"> </template>
+      </div>
+    </div>
+    <script @type="text/javascript" src="./app-2.js"></script>
+  </body>
+</html>

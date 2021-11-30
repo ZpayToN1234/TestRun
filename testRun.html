@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="fName">Candholder's Name</label><br/>
+    <input type="text" name="fName" id="1" v-model.trim="firstName" /> <br />
+    <label for="card">Card Number</label><br />
+    <input type="number" name="card" id="2" v-model.number="cardNumber" />
+    <label for="dateButton"> Valid thru</label><br/>
+    <input type="date" name="dateButton"  v-model="ValidThru"/>
+    <label for="ccv"></label><br />
+    <input type="number" name="ccv" v-model.number="ccv" /> 
+</body>
+</html>

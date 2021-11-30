@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+    <style>
+      .app {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #333;
+      }
+      #b1:hover {
+        padding: 5px;
+        color:white;
+        background-color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        left: 20%;
+        right: 60%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <template v-for="name in clients" :key="names.id">
+        <p v-for=" name in names" :key="name.id">{{name}}</p>
+      </template>
+
+      <p>{{add_string}}</p>
+      <button @mouseleave="appear" @mouseover="appear" @click="fredThings">
+        click here.
+      </button>
+      <button id="b1"  @mouseover="showAlert">Making things better in their own time.</button>
+      <p v-show="show" :style="fret">
+        I enter to the holy of holies <br />
+        I enter trough the blood of the lamb <br />
+        I enter to worship You only <br />
+        I enter to honor I Am<br />
+        Refrão:<br/>
+        Lord I worship You, I worship You<br />
+        Lord I worship You, I worship You<br />
+      </p>
+      
+    </div>
+
+    <script type="text/javascript" src="./app.js"></script>
+  </body>
+</html>

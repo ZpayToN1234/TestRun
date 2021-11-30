@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<style>
+.master{position:relative;
+    background-color: black;
+    padding: 30px;
+    margin: 5px;
+ }
+ #app{position:absolute;
+    margin: 5px;
+    padding: 30px;
+    border-radius: 5%;
+    left:20%;
+    right:50%;
+    /* width:auto; */
+    box-shadow: 14px 67px 222px 72px rgba(44,19,12,0.75);
+    background-color: black;
+    color:whitesmoke;
+
+
+ }
+ 
+ 
+ dvia
+
+</style>
+
+
+  </head>
+  <body>
+      <div class="master"></div>
+    <div id="app">
+      <form action="https://martbytes.com/contact-martbytes/">
+        <br/>
+        <label for="question"> List of things to do</label><br />
+        <input type="text" name="question" />
+        <input type="submit" name="submit" /> <br /><br />
+        <label for="country">Nationality </label>
+        <select name="country" id="country">
+          <option name="Ghana" value="1">Ghana</option>
+          <option name="Kenya" value="2">Kenya</option>
+          <option name="Uganda" value="3">Uganda</option>
+          <option name="Nigeria" value="4">Nigeria</option>
+          <option name="Benin" value="5">Benin</option>
+        </select>
+        <br/><br/>
+        <textarea name="comments" cols="30" rows="5"> Enter your comments here
+        </textarea>
+        <datalist>
+          <option value="computer Science"></option>
+          <option value=" Literature"></option>
+          <option value="computer Science"></option>
+          <option value=" French"></option>
+          <option value=" English"></option>
+          <option value=" maths"></option>
+        </datalist>
+        <br/><br/>
+        <fieldset style="height: 210px;width: 300px;">  
+            <legend>Personal Informartion:  </legend>
+            <label for="name"> Name </label>
+            <input type="text" name="name"><br/> <br/>
+            <label for="email">email</label>
+            <input type="emial" name="email"><br/> <br/>
+            <label for="password">password</label>
+            <input type="password" name="password"><br/> <br/>
+            <label for="telephone"> Telephone Number </label>
+            <input type="tel" name="telephone"><br/a><br/>
+            <label for="birthday"></label>
+            <input type="date" name="birthday">
+            </fieldset>
+      </form>
+
+    <script type="text/javascript" srcp="./app.js"></script>
+</body>
+</html>

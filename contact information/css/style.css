@@ -1,0 +1,27 @@
+*{margin:0px;
+margin:0px}
+
+.root{padding: 30px;
+position: relative;
+width: 100vw;
+height: 100vh;
+font-family: Arial, Helvetica, sans-serif;
+color:rgb(241, 175, 75)}
+
+.contact{position: absolute;
+width:auto;
+height: auto;
+top: 25%;
+left: 5%;
+padding: 30px;
+color: rgb(31, 16, 11);
+text-align: justify;
+border-radius: 1%;
+background-color: rgba(240,153,70,1);
+box-shadow: 3px 115px 2px 6px rgba(240,153,70,1);
+ ;
+
+
+}
+
+
